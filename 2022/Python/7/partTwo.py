@@ -38,7 +38,7 @@ for i in tree:
     size = 0
     for n in tree.keys():
         n = str(n)
-        if(n.startswith(i)):
+        if (n.startswith(i)):
             size += (getSize(tree, n))
     # print(i, size)
     sizes.append(size)
@@ -53,6 +53,6 @@ extraRequired = requiredFree - spaceFree
 min = sizes[0]
 minIndex = 0
 for i, item in enumerate(sizes):
-    if(item >= extraRequired and item < min):
+    if (item >= extraRequired and item < min):
         min = item
 print(min)
