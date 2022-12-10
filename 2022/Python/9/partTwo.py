@@ -1,19 +1,19 @@
 fileContents = list(
     map(lambda x: x.split(), open("in.txt").read().splitlines()))
 positions = [0 for _ in range(10)]
-oldHeadPosition = 0
 tailPositions = []
 
 
-def genTailOffset(headPosition: complex, tailPosition: complex): #This function is inspired by hyper neutrino's solution.
-    #It works the same as my function in partOne, but it just takes fewer lines
+# This function is inspired by hyper neutrino's solution.
+def genTailOffset(headPosition: complex, tailPosition: complex):
+    # It works the same as my function in partOne, but it just takes fewer lines
     offset = 0
     dx = headPosition.real - tailPosition.real
     dy = headPosition.imag - tailPosition.imag
-    if(abs(dx) > 1 or abs(dy) > 1):
-        if(dx == 0):
+    if (abs(dx) > 1 or abs(dy) > 1):
+        if (dx == 0):
             offset += (dy // 2) * 1j
-        elif(dy == 0):
+        elif (dy == 0):
             offset += dx // 2
         else:
             offset += 1 if dx > 0 else -1

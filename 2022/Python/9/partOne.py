@@ -2,7 +2,6 @@ fileContents = list(
     map(lambda x: x.split(), open("in.txt").read().splitlines()))
 headPosition = 0
 tailPosition = 0
-oldHeadPosition = 0
 tailPositions = []
 
 
