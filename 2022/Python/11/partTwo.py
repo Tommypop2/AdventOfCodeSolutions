@@ -1,5 +1,4 @@
-from math import floor
-monkeys: list[list[str]] = []
+monkeys = []
 
 
 def getIndexes(pattern: str, arr: list):
