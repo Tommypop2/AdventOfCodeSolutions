@@ -47,6 +47,7 @@ def doOperation(old: int, operation: str):
 # apparently
 # (a * b) mod x = ((a mod x) * (b mod x)) mod x
 
+
 mod = 1
 for monkey in monkeys:
     mod *= monkey[3][0]
