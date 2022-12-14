@@ -1,9 +1,6 @@
 def getDuplicates(one, two, three):
     for i in one:
         for n in two:
-            # for x in three:
-            #     if(i == n and n == x and x == i):
-            #         return i
             if (i == n and i in three):
                 return i
 
