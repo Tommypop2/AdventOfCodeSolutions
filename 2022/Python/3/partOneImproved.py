@@ -1,4 +1,4 @@
-ruckSacks = open("testInput.txt").read().splitlines()
+ruckSacks = open("input.txt").read().splitlines()
 total = 0
 for i in ruckSacks:
     mid = len(i) // 2
