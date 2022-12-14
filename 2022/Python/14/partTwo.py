@@ -35,7 +35,7 @@ floorVal = maxYval + 2
 currentSandPos = sP
 restingSand = 0
 while True:
-    if((currentSandPos + 1j).imag == floorVal):
+    if ((currentSandPos + 1j).imag == floorVal):
         restingSand += 1
         rPs.add(currentSandPos)
         currentSandPos = sP
@@ -49,7 +49,7 @@ while True:
     else:
         restingSand += 1
         rPs.add(currentSandPos)
-        if(currentSandPos == sP):
+        if (currentSandPos == sP):
             break
         currentSandPos = sP
 
